@@ -1,0 +1,142 @@
+/* for dekstop */
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+[class*="col-"]{
+    display: flex;
+    flex-direction: row;
+
+    
+}
+.navbar .navbar-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.navbar .navbar-menu a{
+    font-size: 1rem;
+    border-radius: 10px;
+   
+}
+.navbar img{
+    height: auto;
+    width: 100px;
+    
+}
+.navbar h1{
+    font-size: 2.2rem;
+    color: whitesmoke;
+    text-align: center;
+}
+/* profile start here */
+.profile p{
+    text-align: justify;
+    width: 50%
+    
+}
+.profile .down-weather-img{
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    transition: width 2s, transform 2s;
+}
+.profile .down-weather-img:hover{
+    width: 150px;
+}
+/* profile end here */
+/* about start here */
+
+.about .about-container {
+    display: flex;
+}
+
+.about .about-desc{
+    display: flex;
+    flex-direction: column;
+}
+.about .about-img img{
+    width: 250px;
+    height: 270px;
+    
+    
+    
+}
+.about h2 {
+    margin-bottom: 20px;
+}
+.about p, address{
+    text-align: left;
+}
+
+/* about end here */
+/* card style start here */
+.section-3{
+    display: flex;
+}
+.card{
+   min-width: 300px;
+    
+
+    
+}
+
+/* card style end here */
+/* contact section start here */
+.contact-section{
+    display: flex;
+    
+}
+.contact-section .achievements{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+    padding: 10px
+}
+.contact-section .contact-me{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+    padding: 10px
+}
+.contact-section .more-contact-icon{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+    padding: 10px
+
+}
+.contact-section .more-contact-icon .more-icon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin:  20px;
+    
+    
+}
+
+/* contact section end here */
+.footer{
+    display: flex;
+    
+}
+.footer .footer-menu a{
+
+    margin: 15px;
+    
+    
+   
+
+}

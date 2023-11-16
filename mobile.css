@@ -1,0 +1,48 @@
+.navbar .navbar-menu{
+    display: none;
+}
+.navbar{
+    position: relative;
+}
+.navbar .small-navbar-menu{
+    position: absolute;
+    background-color: #39a4ac;
+    display: block;
+    z-index: 1;
+   
+    top: 5px;
+    right: 5px;
+    border-radius: 10px;
+}
+.small-navbar-menu .small-navbar-icon img{
+    width: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+.dropdown-navbar-menu{
+    display: none;
+}
+
+.dropdown-navbar-menu a{
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    background-color:#0c6168;
+    border-radius: 1000px;
+    color: whitesmoke;
+    
+
+    
+}
+.dropdown-navbar-menu a:hover{
+    background-color: gray;
+}
+.navbar .small-navbar-menu:hover .dropdown-navbar-menu{
+    display: block;
+    
+
+}
+   
+
+

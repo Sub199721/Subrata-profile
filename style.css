@@ -1,0 +1,404 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0PX;
+    padding: 0PX;
+}
+/* nav bar start here */
+.navbar .small-navbar-menu{
+    display: none;
+}
+.navbar{
+    text-align: center;
+    background-color: #40868b;
+    padding: 1% 5%;
+    
+    
+}
+
+.navbar img{
+    height: auto;
+    width: 200px;
+    margin: 0px auto;
+    border-radius: 1000px;
+    border: 2px solid #0c6168;
+}
+.navbar h1{
+    font-size: 2.5rem;
+    color: whitesmoke;
+    text-align: center;
+}
+.navbar .navbar-menu{
+    display: flex;
+    flex-direction: column;
+}
+.navbar .navbar-menu a{
+    background-color: #0c6168;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 8px;
+    margin: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 1000px;
+   
+
+}
+.navbar .navbar-menu a:hover{
+    background-color: gray;
+}
+
+[class*="col-"]{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+
+
+/* nav bar end here */
+/* profile start here */
+.profile{
+    padding: 130px 20px;
+    text-align: center;
+    position: relative;
+}
+.profile img{
+    width: 100px;
+    height: auto;
+    
+}
+.profile .top-weather-img{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    transition: transform 2s;
+
+}
+.profile .top-weather-img:hover{
+    transform: rotate(360deg);
+}
+
+.profile .down-weather-img{
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    transition: transform 2s;
+}
+.profile .down-weather-img:hover{
+    transform: rotate(360deg);
+}
+.profile p{
+    text-align: justify;
+    width: 90%;
+    margin: 0px auto;
+    font-size: 1.2rem;
+}
+.profile h1{
+    font-size: 3rem;
+}
+
+/* profile end here */
+/* about start here */
+.about{
+    padding: 1% 7%;
+    text-align: center;
+    background-color: #39a4ac;
+    color: white;
+    margin-top: 20px;
+}
+
+.about .about-img img{
+    width: 200px;
+    height: 220px;
+    margin: 10px auto;
+    border: 5px solid white;
+    border-radius: 50%;
+    
+    
+}
+.about p,address{
+    font-size: 1.2rem;
+}
+
+.dotted-hr{
+    width: 30%;
+    border: 6px dotted white; 
+    border-bottom: none;
+    
+}
+.about h2{
+    font-size: 1.5rem;
+}
+.about p button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* about end here */ 
+/* card style start here */
+.section-3{
+    padding: 1% 7%;
+    text-align: center;
+    
+}
+.card{
+    background-color: #a39e9e;
+    margin: 20px;
+    padding: 10px;
+    height: 700px;
+    border-radius: 20px;
+    
+
+    
+}
+.card:hover{
+    box-shadow: 0px 4px 8px 5px black;
+}
+.card .card-image{
+    
+    margin: 0px auto;
+}
+.card-image img{
+    width: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 20px;
+}
+.card h2{
+    background-color: #616161;
+    padding: 10px;
+    color: white;
+}
+
+.skill ol{
+    list-style-type: none;
+    
+
+}
+.skill li{
+    position: relative;
+    margin: 30px 10px;
+    text-align: left;
+    
+}
+.skill li::before{
+    content: "";
+    width: 100%;
+    background: rgb(86, 86, 153, 0.5);
+    position: absolute;
+    height: 15px;
+    top: calc(100% + 5px);
+    left: 0px;
+    border-radius: 1000px;
+    
+
+}
+.skill li::after{
+    content: "";
+    width: 0%;
+    background: rgb(86, 86, 153, 1);
+    position: absolute;
+    height: 15px;
+    top: calc(100% + 5px);
+    left: 0px;
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+    
+
+}
+.skill li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+.skill li.express-js::after{
+    animation-name: express-js;
+}
+@keyframes express-js{
+    to{
+        width: 72%;
+    }
+}
+.skill li.git-hub::after{
+    animation-name: git-hub;
+}
+@keyframes git-hub{
+    to{
+        width: 55%;
+    }
+}
+.skill li.react-js::after{
+    animation-name: react-js;
+}
+@keyframes react-js{
+    to{
+        width: 90%;
+    }
+}
+.skill li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 70%;
+    }
+}
+.skill li.bootstrap::after{
+    animation-name: bootstrap;
+}
+@keyframes bootstrap{
+    to{
+        width: 80%;
+    }
+}
+.skill li.javascript::after{
+    animation-name: javascript;
+}
+@keyframes javascript{
+    to{
+        width: 85%;
+    }
+}
+.skill li.jquery::after{
+    animation-name:jquery;
+}
+@keyframes jquery{
+    to{
+        width: 65%;
+    }
+}
+.skill li.node-js::after{
+    animation-name: node-js;
+}
+@keyframes node-js{
+    to{
+        width: 50%;
+    }
+}
+
+/* card style end here */
+/* contact section start here */
+
+.section-4 .contact-section{
+    padding: 3% 7%;
+    
+    text-align: center;
+    background-color: #39a4ac;
+}
+.more-contact-icon .more-icon img{
+    width: 50px;
+    height: auto;
+    border: 3px solid palevioletred;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 10px;
+}
+.more-contact-icon .more-icon img:hover{
+    
+    opacity: 0.5;
+}
+.contact-section .achievements{
+    margin: 0 auto;
+}
+.achievements h3{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.achievements ol li{
+    text-align: left;
+
+    margin: 10px auto;
+    font-size: 1.2rem;
+    color: white;
+
+}
+.contact-section .contact-me{
+    margin: 10px;
+    margin: 0 auto;
+}
+.contact-me form input, textarea{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    text-align: left;
+    
+}
+.contact-me form input::placeholder{
+    text-align: center;
+    font-size: 1rem;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+.contact-me form textarea::placeholder{
+    text-align: center;
+    font-size: 1rem;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+.contact-me button{
+    background-color: #052d2f;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    font-size: 1rem;
+}
+.contact-me h3{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.more-contact-icon h3{
+    font-size: 1.5rem;
+    font-weight: bolder;
+} 
+/* contact section end here */
+.footer{
+    background-color: black;
+    padding: 3% 5%;
+    text-align: center;
+}
+.footer .footer-menu a{
+    
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 5px;
+    
+    font-size: 0.8rem;
+    font-weight: bold;
+    
+    
+   
+
+}
+.footer .footer-desc{
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: bold;
+    
+
+    
+}
